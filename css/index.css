@@ -137,19 +137,20 @@ body {
 /* CSS code starts here */
 * {
   box-sizing: border-box;
-  max-width: 1000px;
   font-size: 62.5%;
+  max-width: 1000px;
 }
 body {
-  background-color: ghostwhite;
+  background-color: aqua;
 }
 body nav {
   width: 100%;
+  margin: 3% 40%;
   display: flex;
   justify-content: flex-end;
-  border: 2px solid black;
 }
 body nav a {
   text-decoration: none;
   color: indigo;
+  margin: 2%;
 }
