@@ -65,18 +65,23 @@ html, body {
 .flex() {
 	justify-content: center;
 	align-items: center;
+
 }
+.hover-mixin() {
+		&:hover {
+			color: green;
+		}
+	}
 
 * {
 	box-sizing: border-box;
 	font-size: 62.5%;
 	max-width: 1000px;
+	
 }
 body {
 	background-color: aqua;
 	header {
-
-	
 	nav {
 		width: @width;
 		margin: 3% 40%;
@@ -87,6 +92,7 @@ body {
 			text-decoration: none;
 			color: indigo;
 			margin: 2%;
+			.hover-mixin(); 
 		}
 	}
 	.top-content {

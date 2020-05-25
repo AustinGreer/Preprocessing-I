@@ -151,6 +151,9 @@ body header nav a {
   color: indigo;
   margin: 2%;
 }
+body header nav a:hover {
+  color: green;
+}
 body header .top-content {
   background-color: navy;
   width: 80%;
