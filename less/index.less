@@ -49,11 +49,214 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
+
+
 
 html, body {
-    height: 100%;
+	height: 100%;
+	
 }
 
+
+/* CSS code starts here */
+
+@width: 100%; 
+@BackgroundColor: navy; 
+.flex() {
+	justify-content: center;
+	align-items: center;
+
+}
+.hover-mixin() {
+		&:hover {
+			color: green;
+		}
+	}
+
+* {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	max-width: 1000px;
+	
+}
+body {
+	background-color: aqua;
+	header {
+		nav {
+			width: @width;
+			margin: 3% 40%;
+			display: flex;
+			justify-content: flex-end;
+
+			a {
+				text-decoration: none;
+				color: indigo;
+				margin: 2%;
+				.hover-mixin(); 
+			}
+		}
+		.top-content {
+			background-color: @BackgroundColor;
+			width: 80%; 
+			padding: 5%;
+			margin: 10% 30%;
+			display: flex;
+			flex-direction: column;
+			.flex();
+
+			img {
+				border-radius: 10%;
+				width: 50%;
+				height: 90%;
+				margin: 5%;
+			}
+
+			h1 {
+				font-size: 3rem;
+				font-family: sans-serif;
+				color: white;
+				margin: 5%;
+			}
+
+			p {
+				color: white;
+				font-size: 1.4rem;
+				font-family: sans-serif;
+				margin: 5%;
+			}
+
+			button {
+				background-color: darkturquoise;
+				font-size: 1.4rem;
+				font-family: sans-serif;
+				color: darkslategrey;
+				width: 30%;
+				height: 40%;
+				margin: 5%;
+			}
+		}
+	}
+
+	section {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 20%;
+
+		.intro {
+			background-color: @BackgroundColor;
+			width: 70%;
+			height: 50%;
+			padding: 3%;
+			margin: 0 10%;
+			border-radius: 8%;
+
+			h2 {
+				font-size: 2rem;
+				font-family: sans-serif;
+				color: white;
+				margin-bottom: 5%;
+			}	
+
+			p {
+				font-size: 1.4rem;
+				font-family: sans-serif;
+				color: white;
+				line-height: 1.2;
+			}
+		}
+
+		.skills {
+			background-color: @BackgroundColor;
+			width: 60%;
+			height: 50%;
+			padding: 5%;
+			margin-left: 10%;
+			border-radius: 8%;
+
+			h3 {
+				color: white;
+				font-size: 2.5rem;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				margin-bottom: 10%;
+			}
+
+			ul {
+				color: white;
+				font-size: 1.4rem;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				line-height: 1.4;
+
+				li {
+					margin-bottom: 5%;
+				}
+			}
+		}
+	}
+
+	.wh-section {
+		border-radius: 8%;
+		margin-top: 10%;
+		margin-left: 25%;
+		width: @width;
+		background-color: @BackgroundColor;
+		display: flex;
+		flex-direction: column;
+		.flex();
+
+		h4 {
+			color: white;
+			font-size: 2rem;
+			font-family: sans-serif;
+			margin: 5% 0;
+		}
+
+		table {
+			font-size: 1.4rem;
+			font-family: sans-serif;
+			color: white;
+			border: 1px solid white;
+			width: 70%;
+			margin-bottom: 5%;
+
+			th {
+				border: 1px solid white;
+				padding: 2%;
+			}
+
+			td {
+				border: 1px solid white;
+				text-align: center;
+				padding: 2%;
+			}
+		}
+		
+	}
+
+	footer {
+		background-color: @BackgroundColor;
+		width: @width;
+		margin-top: 10%;
+		margin-left: 25%;
+		display: flex;
+		flex-direction: column;
+		.flex(); 
+
+		h5 {
+			font-size: 2rem;
+			font-family: sans-serif;
+			color: white;
+			margin-bottom: 5%;
+		}
+
+		a {
+			font-size: 1.4rem;
+			font-family: sans-serif;
+			color: white;
+			margin-bottom: 5%;
+		}
+	}
+
+
+
+
+}

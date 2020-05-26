@@ -1,1 +1,297 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+html,
+body {
+  height: 100%;
+}
+/* CSS code starts here */
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  max-width: 1000px;
+}
+body {
+  background-color: aqua;
+}
+body header nav {
+  width: 100%;
+  margin: 3% 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+body header nav a {
+  text-decoration: none;
+  color: indigo;
+  margin: 2%;
+}
+body header nav a:hover {
+  color: green;
+}
+body header .top-content {
+  background-color: navy;
+  width: 80%;
+  padding: 5%;
+  margin: 10% 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body header .top-content img {
+  border-radius: 10%;
+  width: 50%;
+  height: 90%;
+  margin: 5%;
+}
+body header .top-content h1 {
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: white;
+  margin: 5%;
+}
+body header .top-content p {
+  color: white;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  margin: 5%;
+}
+body header .top-content button {
+  background-color: darkturquoise;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  color: darkslategrey;
+  width: 30%;
+  height: 40%;
+  margin: 5%;
+}
+body section {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20%;
+}
+body section .intro {
+  background-color: navy;
+  width: 70%;
+  height: 50%;
+  padding: 3%;
+  margin: 0 10%;
+  border-radius: 8%;
+}
+body section .intro h2 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: white;
+  margin-bottom: 5%;
+}
+body section .intro p {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  color: white;
+  line-height: 1.2;
+}
+body section .skills {
+  background-color: navy;
+  width: 60%;
+  height: 50%;
+  padding: 5%;
+  margin-left: 10%;
+  border-radius: 8%;
+}
+body section .skills h3 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10%;
+}
+body section .skills ul {
+  color: white;
+  font-size: 1.4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+}
+body section .skills ul li {
+  margin-bottom: 5%;
+}
+body .wh-section {
+  border-radius: 8%;
+  margin-top: 10%;
+  margin-left: 25%;
+  width: 100%;
+  background-color: navy;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .wh-section h4 {
+  color: white;
+  font-size: 2rem;
+  font-family: sans-serif;
+  margin: 5% 0;
+}
+body .wh-section table {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  color: white;
+  border: 1px solid white;
+  width: 70%;
+  margin-bottom: 5%;
+}
+body .wh-section table th {
+  border: 1px solid white;
+  padding: 2%;
+}
+body .wh-section table td {
+  border: 1px solid white;
+  text-align: center;
+  padding: 2%;
+}
+body footer {
+  background-color: navy;
+  width: 100%;
+  margin-top: 10%;
+  margin-left: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body footer h5 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: white;
+  margin-bottom: 5%;
+}
+body footer a {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  color: white;
+  margin-bottom: 5%;
+}
