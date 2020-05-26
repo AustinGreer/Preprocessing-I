@@ -191,23 +191,47 @@ body header .top-content button {
   height: 40%;
   margin: 5%;
 }
-body .intro-section {
+body section {
+  display: flex;
+  justify-content: space-around;
+}
+body section .intro {
   background-color: navy;
   width: 60%;
   height: 50%;
   padding: 5%;
-  margin: 0 25%;
+  margin: 0 10%;
   border-radius: 8%;
 }
-body .intro-section h2 {
+body section .intro h2 {
   font-size: 2rem;
   font-family: sans-serif;
   color: white;
   margin-bottom: 5%;
 }
-body .intro-section p {
+body section .intro p {
   font-size: 1.4rem;
   font-family: sans-serif;
   color: white;
   line-height: 1.2;
+}
+body section .skills {
+  background-color: navy;
+  width: 50%;
+  height: 50%;
+  margin: 3%;
+}
+body section .skills h3 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5%;
+}
+body section .skills ul {
+  color: white;
+  font-size: 1.4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body section .skills ul li {
+  margin-bottom: 5%;
 }
