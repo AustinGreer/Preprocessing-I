@@ -166,8 +166,8 @@ body header .top-content {
 }
 body header .top-content img {
   border-radius: 10%;
-  width: 50%%;
-  height: 90%%;
+  width: 50%;
+  height: 90%;
   margin: 5%;
 }
 body header .top-content h1 {
@@ -190,4 +190,24 @@ body header .top-content button {
   width: 30%;
   height: 40%;
   margin: 5%;
+}
+body .intro-section {
+  background-color: navy;
+  width: 60%;
+  height: 50%;
+  padding: 5%;
+  margin: 0 25%;
+  border-radius: 8%;
+}
+body .intro-section h2 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: white;
+  margin-bottom: 5%;
+}
+body .intro-section p {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  color: white;
+  line-height: 1.2;
 }

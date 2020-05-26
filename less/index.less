@@ -82,58 +82,81 @@ html, body {
 body {
 	background-color: aqua;
 	header {
-	nav {
-		width: @width;
-		margin: 3% 40%;
-		display: flex;
-		justify-content: flex-end;
+		nav {
+			width: @width;
+			margin: 3% 40%;
+			display: flex;
+			justify-content: flex-end;
 
-		a {
-			text-decoration: none;
-			color: indigo;
-			margin: 2%;
-			.hover-mixin(); 
+			a {
+				text-decoration: none;
+				color: indigo;
+				margin: 2%;
+				.hover-mixin(); 
+			}
+		}
+		.top-content {
+			background-color: @BackgroundColor;
+			width: 80%; 
+			padding: 5%;
+			margin: 10% 30%;
+			display: flex;
+			flex-direction: column;
+			.flex();
+
+			img {
+				border-radius: 10%;
+				width: 50%;
+				height: 90%;
+				margin: 5%;
+			}
+
+			h1 {
+				font-size: 3rem;
+				font-family: sans-serif;
+				color: white;
+				margin: 5%;
+			}
+
+			p {
+				color: white;
+				font-size: 1.4rem;
+				font-family: sans-serif;
+				margin: 5%;
+			}
+
+			button {
+				background-color: darkturquoise;
+				font-size: 1.4rem;
+				font-family: sans-serif;
+				color: darkslategrey;
+				width: 30%;
+				height: 40%;
+				margin: 5%;
+			}
 		}
 	}
-	.top-content {
+	
+	.intro-section {
 		background-color: @BackgroundColor;
-		width: 80%; 
+		width: 60%;
+		height: 50%;
 		padding: 5%;
-		margin: 10% 30%;
-		display: flex;
-		flex-direction: column;
-		.flex();
+		margin: 0 25%;
+		border-radius: 8%;
 
-		img {
-			border-radius: 10%;
-			width: 50%%;
-			height: 90%%;
-			margin: 5%;
-		}
-
-		h1 {
-			font-size: 3rem;
+		h2 {
+			font-size: 2rem;
 			font-family: sans-serif;
 			color: white;
-			margin: 5%;
+			margin-bottom: 5%;
 		}
 
 		p {
+			font-size: 1.4rem;
+			font-family: sans-serif;
 			color: white;
-			font-size: 1.4rem;
-			font-family: sans-serif;
-			margin: 5%;
-		}
-
-		button {
-			background-color: darkturquoise;
-			font-size: 1.4rem;
-			font-family: sans-serif;
-			color: darkslategrey;
-			width: 30%;
-			height: 40%;
-			margin: 5%;
+			line-height: 1.2;
 		}
 	}
-}
 }
